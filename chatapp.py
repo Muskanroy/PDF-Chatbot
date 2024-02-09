@@ -68,7 +68,7 @@ def main():
             #st.write('Embeddings loaded from the Disk')
         else:
             embeddings = OpenAIEmbeddings(
-            openai_api_key='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'
+            openai_api_key='Enter your open api key'
         )
             VectorStore = FAISS.from_texts(chunks,embedding=embeddings)
             with open(f"{store_name}.pkl", "wb") as f:
@@ -80,7 +80,7 @@ def main():
 
         if query:
             docs =VectorStore.similarity_search(query=query, k=4)
-            llm = OpenAI(model="gpt-3.5-turbo-instruct", openai_api_key='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')
+            llm = OpenAI(model="gpt-3.5-turbo-instruct", openai_api_key='Enter your open api key')
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
@@ -95,7 +95,7 @@ def main():
             
         #docs =VectorStore.similarity_search(query=query, k=3)
         # qa = ConversationalRetrievalChain.from_llm(
-        #     llm=ChatOpenAI(model="gpt-3.5-turbo-instruct", openai_api_key='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'),
+        #     llm=ChatOpenAI(model="gpt-3.5-turbo-instruct", openai_api_key='Enter your open api key'),
         #     chain_type="stuff",
         #     retriever=VectorStore.as_retriever(),
         #     get_chat_history=lambda h:h,
