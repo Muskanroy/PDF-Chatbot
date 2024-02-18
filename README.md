@@ -1,4 +1,4 @@
-"# PDF-Chatbot" 
+# PDF-Chatbot
 ## Overview
 Welcome to the Language Chain Chatbot with PDF Query Module! This chatbot is powered by OpenAI's Language Model (LLM) and is designed to assist users in extracting information from PDF documents. This README provides a guide on how to use the PDF query feature and integrate it into your application.
 
