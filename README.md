@@ -7,21 +7,21 @@ Welcome to the Language Chain Chatbot with PDF Query Module! This chatbot is pow
 2. **Information Extraction**: The chatbot utilizes the Language Model to understand and answer questions based on the content of the uploaded PDF.
 
 ## Getting Started
-# 1. Integration with Language Chain
+1. Integration with Language Chain
 Ensure that your chatbot is integrated with the Language Chain and is using the OpenAI LLM model. Follow the documentation provided by Language Chain for seamless integration.
 
-# 2. PDF Query Module Setup
+2. PDF Query Module Setup
 Clone this repository to your local machine or integrate the module into your existing chatbot project.
 **git clone https://github.com/your-repo/language-chain-chatbot.git**
 
-# 3. Dependencies
+3. Dependencies
 Install the necessary dependencies by running:
 **pip install -r requirements.txt**
 
-# 4. Configuration
+4. Configuration
 Adjust the configuration files to match your environment settings. Make sure to set the appropriate API keys, file paths, and any other relevant configurations.
 
-# 5. Run the Chatbot
+5. Run the Chatbot
 Launch your chatbot application, ensuring that the PDF Query Module is active.
 
 ## Usage
